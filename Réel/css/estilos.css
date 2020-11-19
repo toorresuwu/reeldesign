@@ -1,0 +1,142 @@
+
+.cuerpo{
+	background-color: #333333;}
+.botonmorado {
+	background-color: #f0f0f0;
+	font-family: 'lato', sans-serif;
+	}
+.botonmorado:hover {
+	background: #9933FF;
+}
+.container-fotos{
+	margin-top:4%;
+}
+.row{
+	display: flex;
+	justify-content: center;
+}
+.contenido-solo{
+	position: relative;
+	transition: .3s;
+}
+.contenido-solo .text-content,
+.contenido-solo:after{
+	position: absolute;
+	left: 20px;
+	right: 20px;
+}
+.contenido-solo:after{
+	content: '';
+	display: block;
+	background: #9933FF;
+	top: 20px;
+	bottom: 20px;
+	opacity: 0;
+	border-radius: 5px;
+	transform: rotate3d(-1,1,0,100deg);
+	transition: .4s;
+}
+.contenido-solo:hover:after{
+	opacity: .9;
+	transform: rotate3d(0,0,0,0deg);
+}
+.contenido-solo img{
+	width: 100%;
+	height: auto;
+}
+.text-content{
+	top:45%;
+	opacity: 0;
+	z-index: 1;
+	transform: translate(10%,-30%);
+	transition: .3s;
+	text-align: center;
+	color: #fff;
+}
+.text-content h4{
+	font-family: montserrast;
+}
+.contenido-solo:hover .text-content{
+	opacity: 1;
+	transform: translate(0,-50%);
+	transition-delay: .3s;
+}
+
+
+
+
+.contenido-solo-abajo{
+	position: relative;
+	transition: .3s;
+}
+.contenido-solo-abajo .text-content,
+.contenido-solo-abajo:after{
+	position: absolute;
+	left: 20px;
+	right: 20px;
+}
+.contenido-solo-abajo:after{
+	content: '';
+	display: block;
+	background: #9933FF;
+	top: 40px;
+	bottom: 20px;
+	opacity: 0;
+	border-radius: 5px;
+	transform: rotate3d(-1,1,0,100deg);
+	transition: .4s;
+}
+.contenido-solo-abajo:hover:after{
+	opacity: .9;
+	transform: rotate3d(0,0,0,0deg);
+}
+.contenido-solo-abajo img{
+	width: 100%;
+	height: auto;
+}
+.contenido-solo-abajo:hover .text-content{
+	opacity: 1;
+	transform: translate(0,-50%);
+	transition-delay: .3s;
+}
+.contenido-solo-abajo{
+	padding-top: 20px;
+}
+.boton-nosotros{
+	background-color: #f0f0f0;
+	border: none;
+	font-family: 'lato', sans-serif;
+	font-size: 16px;
+
+}
+.formulario-titulo{
+	padding-top: 20px;
+	padding-bottom: 20px;
+}
+.boton-nosotros:hover {
+	background: #9933FF;
+}
+.form-register{
+	background-color: #141414;
+	padding-top: 10px;
+	padding-bottom: 20px;
+	font-family: 'lato', sans-serif;
+}
+.nosotros{
+	height:150px;
+}
+.pie{
+	background-color: #9933FF;
+	font-family: 'lato', sans-serif;
+	font-size: 16px;
+	padding-top: 15px; 
+	padding-bottom: 15px; 
+}
+.contactenos{
+	background-color: #1e1e1f;
+	height:150px;
+}
+.control{
+	padding-bottom: 20px;
+	padding-right: 20px;
+}
